@@ -1,16 +1,25 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HeroesModule } from './heroes/heroes.module';
+import { ContadorModule } from './contador/contador.module';
 
+
+//El NgModule; es simplemnente el decorador
 @NgModule({
+  //En esta parte vamos a poner componentes que seran importados
   declarations: [
-    AppComponent
+    AppComponent,
   ],
+  //En esta parte vamos a otros modulos
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    ContadorModule
   ],
+  //Esta parte son los servicios especificos a un modulo
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

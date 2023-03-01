@@ -1,0 +1,36 @@
+<h1> {{nombre}} </h1>
+
+<dl>
+ 
+   <!-- Propiedad normal  -->
+   <td> Nombre: </td>
+   <dd> {{ nombre }} </dd>
+
+   <!-- Propiedad normal -->
+   <td> Edad: </td>
+   <dd> {{ edad }} </dd>
+
+   <!-- Metodo -->
+   <td> Funcion: </td>
+   <dd> {{ obtenerNombre() }} </dd>
+
+     <!-- get-ter -->
+   <td> Capitalizado: </td>
+   <dd> {{ nombreCapitalizado }} </dd>
+
+   <!-- Metodo -->
+   <!-- <td> Capitalizado: </td>
+   <dd> {{ nombre.toUpperCase() }} </dd>  -->
+
+</dl>
+
+
+<!-- Eventos -->
+<button (click)="cambiarNombre()">
+    Cambiar heroe
+</button>
+
+<!-- Eventos -->
+<button (click)="cambiarEdad()">
+    Cambiar edad
+</button>

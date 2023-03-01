@@ -1,0 +1,39 @@
+<h1>Listado De Heroes</h1>
+
+<!-- directiva *ngIf ó *ngIf-else -->
+<!-- <div *ngIf="heroeBorrado.length != 0; true"> -->
+<!-- <div *ngIf="heroeBorrado"> -->
+<div *ngIf="heroeBorrado != ''; else noBorrado">
+    <h3>Heroe Borrado: <small> {{ heroeBorrado }} </small></h3>
+</div>
+
+
+<!-- directiva ng-template y referencias locales(#ejemploUno) -->
+<ng-template #noBorrado>
+    <h3>No ha borrado nada</h3>
+</ng-template>
+
+
+<button (click)="borrarHeroe()">
+    Borrar
+</button>
+
+
+<!-- directiva *ngFor -->
+    <ul>
+        <li *ngFor="let heroe of heroes; let i = index">
+            {{ i + 1 }} - {{ heroe }}
+        </li>
+    </ul>
+
+    
+
+<!-- directiva *ngSwitch -->
+<!-- <div [ngSwitch]="estado">
+    <p *ngSwitchCase="1">El estado es 1</p>
+    <p *ngSwitchCase="2">El estado es 2</p>
+    <p *ngSwitchDefault>No es ningún estado conocido</p>
+</div> -->
+
+
+

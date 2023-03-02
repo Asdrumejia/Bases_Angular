@@ -27,4 +27,5 @@ export class ContadorComponent {
        acumular(valor: number){
             this.number += valor;
        };
+       
 };

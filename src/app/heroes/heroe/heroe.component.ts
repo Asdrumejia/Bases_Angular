@@ -26,5 +26,4 @@ export class HeroeComponent{
         this.edad = 40
       };
 
-   
 };

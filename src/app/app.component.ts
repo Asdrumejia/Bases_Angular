@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: '../app/app.component.html'
 })
 export class AppComponent {
-
-
+  title: string = 'Html global de la APP'
 };

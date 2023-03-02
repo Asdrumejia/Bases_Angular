@@ -13,6 +13,7 @@ import { ListadoComponent } from './listado/listado.component';
     ],
     //exports: cosas visbles fuera de este modulo
     exports: [
+        HeroeComponent,
         ListadoComponent
     ],
     //imports: van solo modulos
